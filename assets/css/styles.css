@@ -489,3 +489,50 @@ a {
     line-height: 1.54;
     color: #ffffff;
 }
+
+/* ======== Features ======== */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .images img.lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    width: 42%;
+}
+
+.features .content .desc {
+    width: 458px;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.features .content .cta-btn {
+    margin-top: 32px;
+    width: 137px;
+    background: var(--primary-color);
+}
