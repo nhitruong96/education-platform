@@ -4,4 +4,4 @@ services:
   web:
     build: .
     ports:
-      - "5500:5500"
+      - "5505:5505"
