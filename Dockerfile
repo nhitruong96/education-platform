@@ -5,4 +5,4 @@ FROM nginx:alpine
 COPY ./ /usr/share/nginx/html
 
 # Expose port for incoming HTTP traffic
-EXPOSE 5500
+EXPOSE 5505
