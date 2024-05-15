@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy static files to the web root directory
-COPY ./ /usr/share/nginx/html
+COPY ./src /usr/share/nginx/html
 
 # Expose port for incoming HTTP traffic
 EXPOSE 5505
