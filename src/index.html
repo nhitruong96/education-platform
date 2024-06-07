@@ -18,12 +18,26 @@
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- PC header -->
         <header class="header fixed">
             <div class="main-content">
                 <nav class="body">
+                    <!-- Tablet/mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Logo -->
                     <a href="#">
                         <img
@@ -35,7 +49,7 @@
 
                     <!-- Nav -->
                     <div class="nav">
-                        <ul>
+                        <ul id="pc-nav">
                             <li class="active">
                                 <a href="#">Home</a>
                             </li>
@@ -43,19 +57,53 @@
                                 <a href="#courses">Courses</a>
                             </li>
                             <li>
-                                <a href="#pricing">Pricing</a>
+                                <a href="#reviews">Reviews</a>
                             </li>
                             <li>
-                                <a href="#reviews">Reviews</a>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a href="#blog">Blogs</a>
+                            </li>
+                            <li class="show-on-mobile separate">
+                                <a href="#!">Sign In</a>
+                            </li>
+                            <li class="show-on-mobile">
+                                <a href="#!">Sign Up</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Action -->
                     <div class="action">
+                        <a href="#!" class="sign-in-link">Sign In</a>
                         <a href="#!" class="btn sign-up-btn">Sign Up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <!-- Tablet/mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#">
+                    <img src="./assets/img/logo.svg" alt="Lesson." />
+                </a>
+
+                <!-- Nav -->
+                <ul id="mobile-nav"></ul>
             </div>
         </header>
 
@@ -148,7 +196,7 @@
 
             <!-- Popular -->
             <div class="popular">
-                <div class="main-content">
+                <div id="courses" class="main-content">
                     <div class="popular-top">
                         <div class="info">
                             <h2 class="heading lv2">Our popular courses</h2>
@@ -323,7 +371,7 @@
             </div>
 
             <!-- Feedback -->
-            <div class="feedback">
+            <div id="reviews" class="feedback">
                 <div class="main-content">
                     <div class="feedback-list">
                         <!-- Feedback item 1 -->
@@ -429,7 +477,7 @@
             </div>
 
             <!-- Features 1 -->
-            <div class="features">
+            <div id="features" class="features">
                 <div class="main-content">
                     <div class="body">
                         <div class="images">
@@ -487,7 +535,7 @@
             </div>
 
             <!-- Blog -->
-            <div class="blog">
+            <div id="blog" class="blog">
                 <div class="main-content">
                     <div class="blog-top">
                         <h2 class="heading lv2">Our blog</h2>
@@ -818,5 +866,13 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            const pcNav = document.querySelector("#pc-nav");
+            const mobileNav = document.querySelector("#mobile-nav");
+
+            // Copy from PC nav -> Mobile nav
+            mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
     </body>
 </html>

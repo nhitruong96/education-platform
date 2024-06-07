@@ -138,6 +138,17 @@ a {
     margin-left: 49px;
 }
 
+.header .sign-in-link {
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    color: #5f5b53;
+}
+
+.header .sign-in-link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
 .header .sign-up-btn {
     /* padding: 17px 41px; */
     min-width: 144px;
