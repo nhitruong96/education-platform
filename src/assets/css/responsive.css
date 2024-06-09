@@ -173,11 +173,20 @@
     }
 
     .hero .heading.lv1 {
-        font-size: 5.5rem;
+        font-size: 5.2rem;
+    }
+
+    .hero .cta-group {
+        flex-direction: column;
+        row-gap: 30px;
     }
 
     .hero .watch-video {
         margin-left: 0;
+    }
+
+    .hero .stats {
+        font-size: 16px;
     }
 
     .popular .course-list {
@@ -203,7 +212,7 @@
     }
 
     .feedback-item .content blockquote {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .features .images img {
@@ -216,6 +225,10 @@
 
     .features .content {
         text-align: center;
+    }
+
+    .features .content .desc {
+        width: 100%;
     }
 
     .blog .blog-top .desc {
@@ -236,7 +249,7 @@
     }
 
     .footer {
-        padding: 96px 16px 0;
+        padding: 96px 22px 0;
     }
 
     .footer .row {
