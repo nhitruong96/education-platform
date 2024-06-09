@@ -75,6 +75,66 @@
     .separate {
         border-top: 1.5px solid #ebebeb;
     }
+
+    .hero .media-block {
+        display: none;
+    }
+
+    .hero .content-block {
+        width: 84%;
+    }
+
+    .heading.lv1 {
+        text-align: center;
+    }
+
+    .hero .desc {
+        text-align: center;
+    }
+
+    .hero .cta-group {
+        justify-content: space-between;
+    }
+
+    .popular .course-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features .images .lower ~ img {
+        display: none;
+    }
+
+    .features .body {
+        justify-content: flex-start;
+        column-gap: 50px;
+    }
+
+    .features .content {
+        width: 100%;
+    }
+
+    .features .content .desc {
+        width: 392px;
+    }
+
+    .features-2nd .images img {
+        width: 100%;
+    }
+
+    .footer .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+
+    .footer .row .column {
+        width: 100%;
+    }
+
+    .footer .row .column:first-child {
+        width: 100%;
+    }
 }
 
 /* Tablet */
